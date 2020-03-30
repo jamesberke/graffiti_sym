@@ -7,6 +7,7 @@
     background-color: #4c9689;
     display: flex;
     align-items: center;
+    border-bottom: solid 1px white;
 }
 
 .toolbar-header {
@@ -21,7 +22,7 @@
     padding-top: 3px;
     font-size: 36px;
     font-family: 'Spicy Rice', sans-serif;
-    color: #FAD825;
+    color: #FF8F0D;
     -webkit-text-stroke: 1px white;
     text-shadow:
         3px 3px 0 oldlace,
@@ -33,7 +34,9 @@
 
 .toolbar-options {
     display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+    width: 30%
 }
 
 .toolbar-color-selector {
@@ -41,7 +44,7 @@
     width: 75px;
     height: 30px;
     border-radius: 5px;
-    margin-left: 40px;
+    margin-right: 10%;
 }
 
 #toolbar-clear-canvas {
@@ -52,7 +55,6 @@
     font-size: 24px;
     font-weight: bold;
     padding: 2px 10px;
-    margin-right: 4%;
     outline: none;
 }
 
@@ -62,7 +64,8 @@
     height: 28px;
     border-radius: 5px;
     border: solid 1px gray;
-    font-size: 14px;
+    font-size: 16px;
+    margin-right: 10%;
 }
 
 #canvas {

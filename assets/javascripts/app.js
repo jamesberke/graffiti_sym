@@ -28,29 +28,40 @@ function draw({clientX, clientY}) {
     ctx.stroke();
     ctx.beginPath();
     ctx.moveTo(clientX, clientY);
-}
+};
 
 function stop() {
     isDrwaing = false;
     ctx.beginPath();
-}
+};
 
 function clearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);   
-}
+    chooseBackground();
+};
 
 function chooseColor(e) {
-   ctx.strokeStyle = e.target.value;
-}
+    ctx.strokeStyle = e.target.value;
+};
 
 function chooseSize(e) {
     ctx.lineWidth = e.target.value;
-}
+};
+
+function chooseBackground() {
+    let background = new Image();
+    background.src = 'assets/images/concrete_wall.jpg'
+
+    background.onload = function () {
+        ctx.drawImage(background, 0, 0, window.innerWidth, window.innerHeight);
+    };
+};
 
 window.addEventListener('resize', resizeCanvas);
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    chooseBackground();
 };
 resizeCanvas();
