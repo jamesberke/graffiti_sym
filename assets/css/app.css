@@ -7,7 +7,6 @@
     background-color: #4c9689;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .toolbar-header {
@@ -20,10 +19,18 @@
 }
 .toolbar-app-title {
     padding-top: 3px;
-    font-size: 32px;
-    font-family: sans-serif;
-    color: oldlace;
+    font-size: 36px;
+    font-family: 'Spicy Rice', sans-serif;
+    color: #FAD825;
+    -webkit-text-stroke: 1px white;
+    text-shadow:
+        3px 3px 0 oldlace,
+        -1px -1px 0 oldlace,  
+        1px -1px 0 oldlace,
+        -1px 1px 0 oldlace,
+        1px 1px 0 oldlace;
 }
+
 
 .toolbar-color-selector {
     position: relative;
