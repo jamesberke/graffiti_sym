@@ -5,4 +5,22 @@
     right: 0;
     height: 69px;
     background-color: gainsboro;
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-color-selector {
+    position: relative;
+    width: 75px;
+    height: 30px;
+    border: solid 1px red;
+    margin-left: 40px;
+}
+
+.toolbar-clear-canvas {
+
+}
+
+#canvas {
+    cursor: crosshair;
 }

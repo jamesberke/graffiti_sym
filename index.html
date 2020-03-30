@@ -8,15 +8,16 @@
 </head>
 <body>
     <div class="toolbar-container">
-        <div class="toolbar-color-selector">
-
-        </div>
-        <div class="toolbar-transparency-selector">
-
-        </div>
-        <div class="toolbar-spraysize-dropdown">
-
-        </div>
+        <input type="color" 
+            class="toolbar-color-selector" 
+            value="#000000" />
+        <div class="toolbar-transparency-selector"></div>
+        <input type="number"
+            class="toolbar-spraysize-selector"
+            min="1"
+            max="100"
+             />
+        <button id="toolbar-clear-canvas">Clear</button>
     </div>
     <canvas id="canvas" class="drawing-space">
 
