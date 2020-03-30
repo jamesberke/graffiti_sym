@@ -4,6 +4,7 @@ const ctx = canvas.getContext('2d');
 let isDrwaing = false;
 const clearButton = document.getElementById('toolbar-clear-canvas');
 const colorPicker = document.querySelector('.toolbar-color-selector');
+const strokeSize = document.querySelector('.toolbar-spraysize-selector');
 
 canvas.addEventListener('mousedown', start);
 canvas.addEventListener('mousemove', draw);
@@ -12,6 +13,7 @@ canvas.addEventListener('mouseout', stop);
 
 clearButton.addEventListener('click', clearCanvas);
 colorPicker.addEventListener('change', chooseColor);
+strokeSize.addEventListener('change', chooseSize);
 
 function start(e) {
     isDrwaing = true; 
@@ -20,7 +22,6 @@ function start(e) {
 
 function draw({clientX, clientY}) {
     if (!isDrwaing) return;
-    ctx.lineWidth = 3;
     ctx.lineCap = 'round';
 
     ctx.lineTo(clientX, clientY);
@@ -40,6 +41,10 @@ function clearCanvas() {
 
 function chooseColor(e) {
    ctx.strokeStyle = e.target.value;
+}
+
+function chooseSize(e) {
+    ctx.lineWidth = e.target.value;
 }
 
 window.addEventListener('resize', resizeCanvas);
