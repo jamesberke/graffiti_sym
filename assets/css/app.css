@@ -4,21 +4,54 @@
     left: 0;
     right: 0;
     height: 69px;
-    background-color: gainsboro;
+    background-color: #4c9689;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.toolbar-header {
+    margin-left: 4%;
+    display: flex;
+}
+
+.toolbar-app-logo {
+    height: 38px;
+}
+.toolbar-app-title {
+    padding-top: 3px;
+    font-size: 32px;
+    font-family: sans-serif;
+    color: oldlace;
 }
 
 .toolbar-color-selector {
     position: relative;
     width: 75px;
     height: 30px;
-    border: solid 1px red;
+    border-radius: 5px;
     margin-left: 40px;
 }
 
-.toolbar-clear-canvas {
+#toolbar-clear-canvas {
+    background-color: red;
+    border: solid 1px oldlace;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 2px 10px;
+    margin-right: 4%;
+    outline: none;
+}
 
+.toolbar-spraysize-selector {
+    outline: none;
+    width: 75px;
+    height: 28px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    font-size: 14px;
 }
 
 #canvas {

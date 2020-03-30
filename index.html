@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GraffitiSym</title>
+    <link rel="stylesheet" href='assets/css/reset.css' />
     <link rel="stylesheet" href='assets/css/app.css' />
 </head>
 <body>
     <div class="toolbar-container">
+        <div class="toolbar-header">
+            <img src="assets/images/graffiti.png" class="toolbar-app-logo"/>
+            <div class="toolbar-app-title">GraffitiSym</div>
+        </div>
         <input type="color" 
             class="toolbar-color-selector" 
             value="#000000" />
@@ -16,8 +21,8 @@
             class="toolbar-spraysize-selector"
             min="1"
             max="100"
-             />
-        <button id="toolbar-clear-canvas">Clear</button>
+            placeholder="5" />
+        <button id="toolbar-clear-canvas">X</button>
     </div>
     <canvas id="canvas" class="drawing-space">
 
